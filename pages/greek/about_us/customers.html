@@ -95,7 +95,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
         <div class="container">
-            <a class="navbar-brand" onclick="goToOtherPage('../../../index.html')">
+            <a class="navbar-brand">
                 <img id="custom-logo" src="../../../img/logos/LOGO.png" alt="Your Logo" draggable="false" height="70" />
                 <div class="logo-info">
                     <p class="logo-title">A. PSATHAS & SONS O.E</p>
@@ -117,19 +117,19 @@
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item" onclick="goToOtherPage('general.html')">General</a>
+                                <a class="dropdown-item" href="#">General</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" onclick="goToOtherPage('our_company.html')">Our Company</a>
+                                <a class="dropdown-item" href="#">Company</a>
                             </li>
                             <li>
-                                <a class="dropdown-item">Equipment</a>
+                                <a class="dropdown-item" href="#">Equipment</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" onclick="goToOtherPage('customers.html')">Customers</a>
+                                <a class="dropdown-item" href="#">Customers</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" onclick="goToOtherPage('certificates.html')">Certificates</a>
+                                <a class="dropdown-item" href="#">Certificates</a>
                             </li>
                         </ul>
                     </li>
@@ -157,7 +157,7 @@
                         <a class="nav-link mx-2" href="#military">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#certifications">Contact</a>
+                        <a class="nav-link mx-2" onclick="goToOtherPage('../contact/contact.html')">Contact</a>
                     </li>
 
                     <li class="nav-item no-underline">
@@ -187,51 +187,9 @@
 
     <!-- CONTEXT START -->
 
-<div class="container" style="margin-top: 150px; margin-bottom: 150px;">
-    <div class="row">
-        <h2 class="mb-4 mt-4">Certificates</h2>
-        <div class="col-lg-7 order-lg-1 d-flex justify-content-center align-items-center flex-column">
-            <p class="lead">
-                Our company provides high-quality awnings and military tents that meet the standards set forth by the
-                European Union's CE certification. As a company committed to excellence, we ensure that all our products
-                undergo rigorous testing and conform to the essential health, safety, and environmental requirements
-                outlined in the CE directives.
-            </p>
-        </div>
-        <div class="col-lg-5 order-lg-2 d-flex justify-content-center align-items-center flex-column">
-            <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="200" height="200"
-                src="../../../img/certificates/CE-LOGO.png" alt="Placeholder: 300x300">
-        </div>
-    </div>
-    <br>
-    <div class="row mt-5">
-        <div class="col-lg-7 order-lg-2 d-flex justify-content-center align-items-center flex-column">
-            <p class="lead">we are proud to possess a NATO Cage Code, signifying our status as an authorized supplier to
-                NATO member countries. This not only reinforces our commitment to quality and reliability but also allows
-                us to play a significant role in supporting defense and security operations for NATO nations.
-            </p>
-        </div>
-        <div class="col-lg-5 order-lg-1 d-flex justify-content-center align-items-center flex-column">
-            <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="230" height="230"
-                src="../../../img/certificates/NATO.jpg" alt="Placeholder: 300x300">
-        </div>
-    </div>
-    <br>
-    <div class="row mt-5">
-        <div class="col-lg-7 order-lg-1 d-flex justify-content-center align-items-center flex-column">
-            <p class="lead">By complying with ISO 9000:2015 standards, we strive to exceed customer expectations,
-                maintain consistency in product quality, and optimize our internal processes. This dedication to
-                excellence empowers us to deliver reliable, safe, and innovative awnings, military tents, and related
-                solutions to our customers worldwide.</p>
-        </div>
-        <div class="col-lg-5 order-lg-2 d-flex justify-content-center align-items-center flex-column">
-            <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="230" height="230"
-                src="../../../img/certificates/iso9002015.jpg" alt="Placeholder: 200x200">
-        </div>
-    </div>
-</div>
 
-<!-- CONTEXT END -->
+
+    <!-- CONTEXT END -->
 
     <!-- Footer -->
     <footer id="contact" class="container-fluid text-white" style="background-color: #FF5F15; bottom: 0;">
@@ -242,8 +200,8 @@
                 <!-- Content -->
                 <div class="row">
                     <div class="col-3 d-flex justify-content-center align-items-center">
-                        <img src="../../../img/logos/LOGO.png" alt="LOGO" class="img-fluid" draggable="false"
-                            height="70px" width="70px">
+                        <img src="img/logos/LOGO.png" alt="LOGO" class="img-fluid" draggable="false" height="70px"
+                            width="70px">
                     </div>
                     <div class="col-9 d-flex justify-content-center align-items-center">
                         <h6 class="text-uppercase fw-bold text-start">
@@ -289,10 +247,7 @@
     <script type="text/javascript" src="../../../js/mdb.min.js"></script>
     <!-- Custom scripts -->
     <script type="text/javascript">
-        function goToOtherPage(page) {
-            // Change the location to the other_page.html
-            window.location.href = page;
-        }
+
     </script>
 </body>
 
