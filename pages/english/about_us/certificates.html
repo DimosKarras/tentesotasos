@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>AWNINGS "TASOS"</title>
+    <link rel="icon" href="../../../img/logos/LOGO.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="../../../css/mdb.min.css" />
+    <!-- Custom styles for this template -->
+    <style>
+        /*  General  */
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer {
+            flex-shrink: 0;
+        }
+
+
+        /* Logo */
+        .logo-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1034a6;
+            margin: 0;
+        }
+
+        .logo-subtitle {
+            font-size: 12px;
+            color: #1034a6;
+            margin: 0;
+        }
+
+        #custom-logo {
+            margin-right: 10px;
+            /* Adjust the spacing as needed */
+        }
+
+        /* CSS for underline animation */
+        .navbar-nav>li {
+            /* Changed the selector to only apply to direct children of .navbar-nav */
+            position: relative;
+            font-weight: bold;
+        }
+
+        .navbar-nav>li:before {
+            /* Changed the selector to only apply to direct children of .navbar-nav */
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #1034a6;
+            /* Change the color as per your design */
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Apply the underline animation only to direct children of .navbar-nav that do not have the "no-underline" class */
+        .navbar-nav>li:not(.no-underline):hover:before {
+            /* Changed the selector to only apply to direct children of .navbar-nav */
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        /* Hide logo-subtitle on phones (less than 768px width) */
+        @media (max-width: 767.98px) {
+            .logo-subtitle {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START OF PROJECT -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+        <div class="container">
+            <a class="navbar-brand" onclick="goToOtherPage('../../../index.html')">
+                <img id="custom-logo" src="../../../img/logos/LOGO.png" alt="Your Logo" draggable="false" height="70" />
+                <div class="logo-info">
+                    <p class="logo-title">A. PSATHAS & SONS O.E</p>
+                    <p class="logo-subtitle">MANUFACTURERS OF COVERS AND AWNINGS FOR TANKS AND MILITARY VEHICLES</p>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">About us</a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" onclick="goToOtherPage('general.html')">General</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" onclick="goToOtherPage('our_company.html')">Our Company</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item">Equipment</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" onclick="goToOtherPage('customers.html')">Customers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" onclick="goToOtherPage('certificates.html')">Certificates</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Navbar dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                            data-mdb-toggle="dropdown" aria-expanded="false">Products</a>
+                        <!-- Dropdown menu -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li>
+                                <a class="dropdown-item" href="#">Skines</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Vehicle/arms covers</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Awnings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Special Constructions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#military">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#certifications">Contact</a>
+                    </li>
+
+                    <li class="nav-item no-underline">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="flag-united-kingdom flag m-0"></i> EN
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                                <li>
+                                    <a class="dropdown-item" onclick="changeLanguage('en')"><i
+                                            class="flag-united-kingdom flag"></i>English<i
+                                            class="fa fa-check text-success ms-2"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" onclick="changeLanguage('el')"><i
+                                            class="flag-greece flag"></i>Ελληνικά</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- CONTEXT START -->
+
+    <div class="container" style="margin-top: 150px; margin-bottom: 150px;">
+
+        <div class="row">
+            <h2 class="mb-4 mt-4">Certificates</h2>
+            <div class="col-lg-7 order-lg-1">
+                <p class="lead">
+                    Our company provides high-quality awnings and military tents
+                    that meet the standards that set forth by the European Union's CE certification. As a company
+                    committed to excellence, we ensure that all our products undergo rigorous testing and conform to the
+                    essential health, safety, and environmental requirements outlined in the CE directives.
+                </p>
+            </div>
+            <div class="col-lg-5 order-lg-2">
+                <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="300" height="300"
+                    src="../../../img/certificates/CE-LOGO.png" alt="Placeholder: 300x300">
+            </div>
+        </div>
+        <br>
+        <div class="row mt-5">
+            <div class="col-lg-7 order-lg-2">
+                <p class="lead">we are proud to possess a NATO Cage Code, signifying our status as an authorized
+                    supplier to NATO member countries.This not only reinforces our commitment to quality
+                    and reliability but also allows us to play a significant role in supporting defense and security
+                    operations for NATO nations.
+                </p>
+            </div>
+            <div class="col-lg-5 order-lg-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="300" height="300"
+                    src="../../../img/certificates/NATO.jpg" alt="Placeholder: 300x300">
+            </div>
+        </div>
+        <br>
+        <div class="row mt-5">
+            <div class="col-lg-7 order-lg-1">
+                <p class="lead">By complying with ISO 9000:2015 standards, we strive to exceed customer expectations,
+                    maintain consistency in product quality, and optimize our internal processes. This dedication to
+                    excellence empowers us to deliver reliable, safe, and innovative awnings, military tents, and
+                    related solutions to our customers worldwide.</p>
+            </div>
+            <div class="col-lg-5 order-lg-2">
+                <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="300" height="300"
+                    src="../../../img/certificates/iso9002015.jpg" alt="Placeholder: 300x300">
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTEXT END -->
+
+    <!-- Footer -->
+    <footer id="contact" class="container-fluid text-white" style="background-color: #FF5F15; bottom: 0;">
+        <!-- Grid row -->
+        <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <div class="row">
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <img src="../../../img/logos/LOGO.png" alt="LOGO" class="img-fluid" draggable="false"
+                            height="70px" width="70px">
+                    </div>
+                    <div class="col-9 d-flex justify-content-center align-items-center">
+                        <h6 class="text-uppercase fw-bold text-start">
+                            A. PSATHAS & SONS<br>
+                            <small>MANUFACTURERS OF COVERS AND AWNINGS FOR TANKS AND MILITARY VEHICLES</small>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">CONTACT</h6>
+                <p><small><i class="fas fa-home me-3"></i> Kosmiou - Kourtidou & Xr. Tsounta, 69100, Komotini,
+                        Greece</small>
+                </p>
+                <p><small><i class="fas fa-envelope me-3"></i> psathas@otenet.gr</small></p>
+                <p><small><i class="fas fa-phone me-3"></i> +30 (25310) 23671, 30737</small></p>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-12 text-center p-3"
+                style="background-color: rgba(0, 0, 0, 0.2); width: 100%; font-size: 12px;">
+                <p style="margin: 0;">© 2023 <strong>Dimos Karras</strong>. All Rights Reserved.</p>
+                <p style="margin: 0;">Powered by <strong>MDBootstrap</strong></p>
+            </div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+    <!-- END OF PROJECT -->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="../../../js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+        function goToOtherPage(page) {
+            // Change the location to the other_page.html
+            window.location.href = page;
+        }
+    </script>
+</body>
+
+</html>
