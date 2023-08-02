@@ -95,7 +95,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
         <div class="container">
-            <a class="navbar-brand" onclick="goToOtherPage('../../../index-el.html')">
+            <a class="navbar-brand" onclick="goToOtherPage('../../../index.html')">
                 <img id="custom-logo" src="../../../img/logos/LOGO.png" alt="Your Logo" draggable="false" height="70" />
                 <div class="logo-info">
                     <p class="logo-title">Α. ΨΑΘΑΣ ΚΑΙ ΥΙΟΙ Ο.Ε</p>
@@ -274,8 +274,8 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">ΕΠΙΚΟΙΝΩΝΙΑ</h6>
-                <p><small><i class="fas fa-home me-3"></i> Κοσμίου - Κουρτίδου & Χρ. Τσούντα, 69100, Komotini,
-                        Greece</small>
+                <p><a href="https://goo.gl/maps/qkVMyGJeSjYhpFXu9" target="_blank" style="color: whitesmoke;"><small><i class="fas fa-home me-3"></i> Κοσμίου - Κουρτίδου & Χρ. Τσούντα, 69100,
+                    Κομοτηνή</small></a>
                 </p>
                 <p><small><i class="fas fa-envelope me-3"></i> psathas@otenet.gr</small></p>
                 <p><small><i class="fas fa-phone me-3"></i> (+30) 25310-23671, 30737</small></p>
@@ -307,6 +307,23 @@
         function goToOtherPage(page) {
             // Change the location to the other_page.html
             window.location.href = page;
+        }
+
+        function changeLanguage(lang) {
+            const languageFiles = {
+                'el': 'our_company.html',
+                'en': '../../english/about_us/our_company.html'
+            };
+
+            const currentURL = window.location.href;
+            const urlParts = currentURL.split('/');
+
+            const currentHTMLFile = urlParts[urlParts.length - 1];
+            const baseURL = currentURL.replace(currentHTMLFile, '');
+
+            const newURL = baseURL + languageFiles[lang];
+
+            window.location.href = newURL;
         }
     </script>
 </body>

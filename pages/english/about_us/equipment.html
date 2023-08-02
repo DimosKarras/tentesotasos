@@ -95,7 +95,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
         <div class="container">
-            <a class="navbar-brand" onclick="goToOtherPage('../../../index.html')">
+            <a class="navbar-brand" onclick="goToOtherPage('../../../index-en.html')">
                 <img id="custom-logo" src="../../../img/logos/LOGO.png" alt="Your Logo" draggable="false" height="70" />
                 <div class="logo-info">
                     <p class="logo-title">A. PSATHAS & SONS O.E</p>
@@ -126,7 +126,7 @@
                                 <a class="dropdown-item">Equipment</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" onclick="goToOtherPage('customers.html')">Customers</a>
+                                <a class="dropdown-item disabled" onclick="goToOtherPage('customers.html')">Customers</a>
                             </li>
                             <li>
                                 <a class="dropdown-item" onclick="goToOtherPage('certificates.html')">Certificates</a>
@@ -140,21 +140,21 @@
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <li>
-                                <a class="dropdown-item" href="#">Skines</a>
+                                <a class="dropdown-item disabled" href="#">Skines</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Vehicle/arms covers</a>
+                                <a class="dropdown-item disabled" href="#">Vehicle/arms covers</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Awnings</a>
+                                <a class="dropdown-item disabled" href="#">Awnings</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Special Constructions</a>
+                                <a class="dropdown-item disabled" href="#">Special Constructions</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mx-2" href="#military">Gallery</a>
+                        <a class="nav-link mx-2 disabled" href="#military">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-2" onclick="goToOtherPage('../contact/contact.html')">Contact</a>
@@ -269,8 +269,7 @@
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold mb-4">CONTACT</h6>
-                <p><small><i class="fas fa-home me-3"></i> Kosmiou - Kourtidou & Xr. Tsounta, 69100, Komotini,
-                        Greece</small>
+                <p><a href="https://goo.gl/maps/qkVMyGJeSjYhpFXu9" target="_blank" style="color: whitesmoke;"><small><i class="fas fa-home me-3"></i> Kosmiou - Kourtidou & Xr. Tsounta, 69100, Komotini, Greece</small></a>
                 </p>
                 <p><small><i class="fas fa-envelope me-3"></i> psathas@otenet.gr</small></p>
                 <p><small><i class="fas fa-phone me-3"></i> +30 (25310) 23671, 30737</small></p>
@@ -302,6 +301,23 @@
         function goToOtherPage(page) {
             // Change the location to the other_page.html
             window.location.href = page;
+        }
+
+        function changeLanguage(lang) {
+            const languageFiles = {
+                'el': '../../greek/about_us/equipment.html',
+                'en': 'equipment.html'
+            };
+
+            const currentURL = window.location.href;
+            const urlParts = currentURL.split('/');
+
+            const currentHTMLFile = urlParts[urlParts.length - 1];
+            const baseURL = currentURL.replace(currentHTMLFile, '');
+
+            const newURL = baseURL + languageFiles[lang];
+
+            window.location.href = newURL;
         }
     </script>
 </body>
