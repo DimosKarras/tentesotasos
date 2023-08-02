@@ -1,0 +1,25 @@
+RewriteEngine On
+
+# Rewrite URLs for specific pages
+RewriteRule ^en/about_us$ /pages/english/about_us/our_company.html [L]
+RewriteRule ^about_us$ /pages/greek/about_us/our_company.html [L]
+
+RewriteRule ^en/about_us$ /pages/english/about_us/general.html [L]
+RewriteRule ^about_us$ /pages/greek/about_us/general.html [L]
+
+RewriteRule ^en/about_us$ /pages/english/about_us/certificates.html [L]
+RewriteRule ^about_us$ /pages/greek/about_us/certificates.html [L]
+
+RewriteRule ^en/about_us$ /pages/english/about_us/equipment.html [L]
+RewriteRule ^about_us$ /pages/greek/about_us/equipment.html [L]
+
+RewriteRule ^en/contact$ /pages/english/contact/contact.html [L]
+RewriteRule ^contact$ /pages/greek/contact/contact.html [L]
+
+# Rewrite URLs for the homepage and index pages
+RewriteRule ^en$ /tentestosasos/index-en.html [L]
+RewriteRule ^$ /tentestosasos/index.html [L]
+
+# Redirect other URLs to the correct language versions
+RewriteRule ^en/(.*)$ /tentestosasos/$1 [L]
+RewriteRule ^(.*)$ /tentestosasos/pages/greek/$1 [L]
